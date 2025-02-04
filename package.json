@@ -1,0 +1,31 @@
+{
+  "name": "chapter1",
+  "version": "1.0.0",
+  "description": "learn react-easy.",
+  "keywords": [
+    "react"
+  ],
+  "homepage": "https://github.com/rajushah404/React-Chapter-1#readme",
+  "bugs": {
+    "url": "https://github.com/rajushah404/React-Chapter-1/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajushah404/React-Chapter-1.git"
+  },
+  "license": "ISC",
+  "author": "Raju Shah",
+  "type": "commonjs",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.13.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
