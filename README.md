@@ -17,5 +17,9 @@
 - Error Handeling
 - Host on HTPPS
 - Tree Shaking
+- Different build for dev and production bundles.
 - 
 
+# How to make it work
+- npm install  (to creatre all the modules and depencencies)
+- 
