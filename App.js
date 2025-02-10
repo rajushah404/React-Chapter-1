@@ -1,42 +1,66 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { jsx } from "react/jsx-runtime";
 
-// React.createElement creats an object when we render this element
-// into DOM it becomes the HTML element
+// function Footer() {
+//   return (
+//     <footer style={{ color: "green", fontSize: 30 }}>This is Footer </footer>
+//   );
+// }
 
-const heading = React.createElement("h1", { id: "heading" }, "Hello React");
+// const Component = ({ children }) => <h3>{children}</h3>;
+// const HeadingComponent = () => {
+//   return (
+//     <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+//       <Component>This is name </Component>
+//       {Component({ children: "inside" })}
+//       <h1 className="heading">Hello React Functional Componants</h1>
+//       <Footer />
+//     </div>
+//   );
+// };
 
-//JSX is a javaScript syntax, which is similar to HTML it is HTML like Syntax
-const jsxHeading = <h1 className="head">Hello React Using JSX</h1>;
-// JSX is  a valid javaScript but not a pure JavaScript Code
-// JSX is transmitted to JS Script by Bundelers to make it Run.
-// Babel jobs is to Transpile the JSX to JS Script Code
-// JSX => React.createElement => JS Object => HTML Element
-
-// React Components
-//Classed Based Components - OLD Way
-//Functional Componants - New Way
-
-// we can render functional components just by putting the function on <Functional Component/>
-const Title = () => {
-  return <h1>Title Component</h1>;
-};
+const nestedElement = React.createElement(
+  "div",
+  {},
+  React.createElement("h2", {}, "heading 1"),
+  React.createElement("h1", {}, "Heading 2"),
+  React.createElement("h3", {}, "heading 3")
+);
 
 
-//It is also a componant composition  (passing one Component to another )
-const HeadingComponent = () => {
+const Header = () => {
   return (
-    <div>
-      <Title />
-      <h1 className="heading">Hello React Functional Componants</h1>
-    </div>
+    <header style={styles.header}>
+      <img src="logo.png" alt="Logo" style={styles.logo} />
+      <input type="text" placeholder="Search..." style={styles.search} />
+      <img src="user-icon.png" alt="User" style={styles.userIcon} />
+    </header>
   );
 };
 
+const styles = {
+  header: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "10px 20px",
+    backgroundColor: "#282c34",
+  },
+  logo: { width: "50px" },
+  search: { padding: "5px", width: "200px" },
+  userIcon: { width: "40px", borderRadius: "50%" },
+};
+
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<HeadingComponent />);
+root.render(<Header/>);
 
 //HTML code will replace by heading
 // Js Engine unsernstand ECMAscript
+
+//Cross Side Scripting :-
+//JSX takes care of Injection attacks;
+//when ever the code is in {} the JSX will sanitize the data ;
+
+// The Component should start with capital letter

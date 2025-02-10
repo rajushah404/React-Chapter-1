@@ -1,4 +1,4 @@
-4303
+4306
 77C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\semver\functions\inc.js133831211078411680 0
 86C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\lmdb\dependencies\lmdb\libraries133831211076851514 1
 90C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\utility-types\dist\mapped-types.d.ts133831211078518250 0
@@ -9,7 +9,7 @@
 104C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\caniuse-lite\data\features\prefers-color-scheme.js133831211084223985 0
 82C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\type-fest\source\except.d.ts133831211078236584 0
 80C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\entities\lib\escape.js.map133831211079465016 0
-45C:\Users\rajus\OneDrive\Desktop\Chapter1\dist133836355796185378 1
+45C:\Users\rajus\OneDrive\Desktop\Chapter1\dist133836807969242004 1
 80C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\utility-types\package.json133831211077380678 0
 116C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\posthtml\node_modules\dom-serializer\node_modules\entities\lib133831211078483170 1
 105C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\caniuse-lite\data\features\getboundingclientrect.js133831211082748946 0
@@ -29,7 +29,7 @@
 64C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\domhandler133831211078048832 1
 82C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\cosmiconfig\dist\util.js.map133831211079308372 0
 107C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\@parcel\utils\test\input\sourcemap\source-root.js.map133831211080290132 0
-47C:\Users\rajus\OneDrive\Desktop\Chapter1\App.js133831227274896705 0
+47C:\Users\rajus\OneDrive\Desktop\Chapter1\App.js133836807965989235 0
 85C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\caniuse-lite\data\regions\GM.js133831211082798945 0
 61C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\js-yaml133831211079123133 1
 104C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\posthtml\node_modules\domutils\lib\legacy.d.ts.map133831211078161471 0
@@ -42,13 +42,13 @@
 74C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\tslib\tslib.es6.html133831211075636700 0
 88C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\@parcel\types-internal\src\Glob.js133831211077557006 0
 100C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\posthtml\node_modules\domhandler\lib\node.d.ts133831211077757187 0
-51C:\Users\rajus\OneDrive\Desktop\Chapter1\index.html133831224649613863 0
+51C:\Users\rajus\OneDrive\Desktop\Chapter1\index.html133836366604481729 0
 68C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\dom-serializer133831211077998428 1
 85C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\@parcel\profiler\lib\types.d.ts133831211078463171 0
 72C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\commander\index.js133831211077491879 0
 91C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\caniuse-lite\data\features\flexbox.js133831211082548727 0
 90C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\@swc\helpers\esm\_async_generator.js133831211080270140 0
-50C:\Users\rajus\OneDrive\Desktop\Chapter1\index.css133832079485461640 0
+50C:\Users\rajus\OneDrive\Desktop\Chapter1\index.css133836363819345074 0
 73C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\react-error-overlay133831211077662076 1
 82C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\posthtml-render\package.json133831211076159013 0
 90C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\@parcel\package-manager\src\index.js133831211077370677 0
@@ -72,14 +72,20 @@
 74C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\posthtml-parser\dist133831211077350680 1
 130C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-optional-packages-test.cmd133831211085978163 0
 50C:\Users\rajus\OneDrive\Desktop\Chapter1\README.md133832078853617471 0
-73C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\braces\lib\utils.js133831211077557006 0
-66C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\browserslist133831211077908123 1
 66C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\lightningcss133831211078058839 1
 103C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\caniuse-lite\data\features\css-conic-gradients.js133831211080787613 0
+73C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\braces\lib\utils.js133831211077557006 0
+66C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\browserslist133831211077908123 1
 85C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\caniuse-lite\data\regions\LB.js133831211083423511 0
 74C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\@parcel\profiler\lib133831211078453163 1
 85C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\update-browserslist-db\index.js133831211076670729 0
-57C:\Users\rajus\OneDrive\Desktop\Chapter1\ReactNotes\Notes133832067295624302 1
+57C:\Users\rajus\OneDrive\Desktop\Chapter1\ReactNotes\Notes133836809549544954 1
+74C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\lmdb\dependencies\v8133831211080590637 1
+85C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\caniuse-lite\data\regions\SN.js133831211084599897 0
+112C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\posthtml\node_modules\dom-serializer\lib\foreignNames.d.ts133831211078191477 0
+97C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\type-fest\source\union-to-intersection.d.ts133831211079258377 0
+71C:\Users\rajus\OneDrive\Desktop\Chapter1\ReactNotes\Notes\Chapter 2.txt133836809165756597 0
+79C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\@parcel\watcher\src\macos133831211078948217 1
 67C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\dotenv-expand133831211077662076 1
 67C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\@lezer\common133831211077632087 1
 85C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\caniuse-lite\data\regions\IS.js133831211083237497 0
@@ -677,10 +683,6 @@
 68C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\lmdb\native.js133831211080707557 0
 102C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\posthtml\node_modules\htmlparser2\lib\index.d.ts133831211078266584 0
 89C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\type-fest\source\tsconfig-json.d.ts133831211079238376 0
-74C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\lmdb\dependencies\v8133831211080590637 1
-85C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\caniuse-lite\data\regions\SN.js133831211084599897 0
-112C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\posthtml\node_modules\dom-serializer\lib\foreignNames.d.ts133831211078191477 0
-97C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\type-fest\source\union-to-intersection.d.ts133831211079258377 0
 98C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\scheduler\cjs\scheduler.native.production.js133831221803504755 0
 90C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\@parcel\core\src\summarizeRequest.js133831211080822682 0
 85C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\type-fest\source\utilities.d.ts133831211079278368 0
@@ -1027,8 +1029,6 @@
 88C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\node-addon-api\tools\conversion.js133831211078361675 0
 102C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\tooltag133831211078608258 0
 84C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\regenerator-runtime\runtime.js133831211076149009 0
-99C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\posthtml\node_modules\domutils\lib\feeds.d.ts133831211078528251 0
-114C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\@parcel\core\test\fixtures\config-plugin-not-found\.parcelrc133831211077586999 0
 71C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\react-refresh\cjs133831211077307075 1
 99C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\react\cjs\react-jsx-dev-runtime.production.js133831221160815383 0
 68C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\dotenv\LICENSE133831211075666702 0
@@ -1125,6 +1125,7 @@
 100C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\lmdb\dependencies\lz4\lib\dll\example\Makefile133831211078443161 0
 96C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\entities\lib\generated\decode-data-html.js133831211077431890 0
 98C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\caniuse-lite\data\features\css-exclusions.js133831211080960445 0
+64C:\Users\rajus\OneDrive\Desktop\Chapter1\dist\index.9e4c6fd2.css133836807969142052 0
 78C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\ansi-styles\package.json133831211076083909 0
 84C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\commander\package-support.json133831211077837554 0
 113C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\react-dom\cjs\react-dom-server-legacy.browser.production.js133831221803676898 0
@@ -1325,6 +1326,8 @@
 95C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\@parcel\core\src\requests\EntryRequest.js133831211079877780 0
 117C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\posthtml\node_modules\entities\lib\generated\decode-data-xml.js133831211077191973 0
 88C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\posthtml\node_modules\domutils\lib133831211078848056 1
+99C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\posthtml\node_modules\domutils\lib\feeds.d.ts133831211078528251 0
+114C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\@parcel\core\test\fixtures\config-plugin-not-found\.parcelrc133831211077586999 0
 98C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\caniuse-lite\data\features\css-appearance.js133831211080610626 0
 97C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\posthtml\node_modules\domutils\lib\feeds.js133831211075978964 0
 105C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\posthtml\node_modules\domhandler\lib\index.d.ts.map133831211077096836 0
@@ -2054,7 +2057,7 @@
 70C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\is-glob\index.js133831211075853251 0
 78C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\cosmiconfig\dist\util.js133831211078181466 0
 103C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\@parcel\utils\test\input\sourcemap\source-root.js133831211079852688 0
-67C:\Users\rajus\OneDrive\Desktop\Chapter1\dist\index.7826abd7.js.map133836355796170320 0
+67C:\Users\rajus\OneDrive\Desktop\Chapter1\dist\index.7826abd7.js.map133836807969231991 0
 69C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\is-glob\LICENSE133831211075636700 0
 73C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\is-extglob\index.js133831211076640725 0
 74C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\is-extglob\README.md133831211075843250 0
@@ -2488,8 +2491,8 @@
 98C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\caniuse-lite\data\features\object-observe.js133831211083973118 0
 85C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\domelementtype\lib\esm\index.js133831211075978964 0
 78C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\dom-serializer\README.md133831211078048832 0
-88C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\dom-serializer\lib\foreignNames.js133831211076630728 0
 99C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\caniuse-lite\data\features\css-transitions.js133831211081772135 0
+88C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\dom-serializer\lib\foreignNames.js133831211076630728 0
 83C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\dom-serializer\lib\index.d.ts133831211078321670 0
 91C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\@parcel\transformer-svg\src\inline.js133831211077131986 0
 85C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\caniuse-lite\data\regions\KY.js133831211083408456 0
@@ -3722,7 +3725,7 @@
 96C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\@parcel\workers\lib\core-worker.browser.js133831211077968422 0
 83C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\@parcel\workers\lib\Handle.js133831211078518250 0
 82C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\@parcel\workers\lib\index.js133831211078638664 0
-63C:\Users\rajus\OneDrive\Desktop\Chapter1\dist\index.7826abd7.js133836355796100369 0
+63C:\Users\rajus\OneDrive\Desktop\Chapter1\dist\index.7826abd7.js133836807969111991 0
 87C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\@parcel\workers\lib\WorkerFarm.js133831211079475009 0
 89C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\@parcel\workers\lib\web\WebChild.js133831211079308372 0
 98C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\@parcel\workers\lib\threads\ThreadsWorker.js133831211079218308 0
@@ -3741,7 +3744,6 @@
 84C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\@parcel\watcher\src\DirTree.cc133831211077537001 0
 82C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\@parcel\watcher\src\Event.hh133831211078938217 0
 81C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\@parcel\watcher\src\Glob.hh133831211078978226 0
-79C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\@parcel\watcher\src\macos133831211078948217 1
 90C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\@parcel\watcher\src\PromiseRunner.hh133831211079109375 0
 80C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\@parcel\watcher\src\shared133831211078772967 1
 78C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\@parcel\watcher\src\unix133831211078171475 1
@@ -4301,4 +4303,5 @@
 81C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\.bin\update-browserslist-db133831211085948147 0
 85C:\Users\rajus\OneDrive\Desktop\Chapter1\node_modules\.bin\update-browserslist-db.cmd133831211085948147 0
 63C:\Users\rajus\OneDrive\Desktop\Chapter1\dist\index.7e797343.js133832067998889677 0
-56C:\Users\rajus\OneDrive\Desktop\Chapter1\dist\index.html133836355796110336 0
+68C:\Users\rajus\OneDrive\Desktop\Chapter1\dist\index.9e4c6fd2.css.map133836807969222004 0
+56C:\Users\rajus\OneDrive\Desktop\Chapter1\dist\index.html133836807969161996 0
