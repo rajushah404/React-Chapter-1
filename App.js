@@ -1,19 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { jsx } from "react/jsx-runtime";
 
+// React.createElement creats an object when we render this element
+// into DOM it becomes the HTML element
 
-const parent = React.createElement("div", { id: "parent" }, [
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "Hello Worls"),
-    React.createElement("h2", {}, "Hey"),
-  ]),
-  React.createElement("div", { id: "child2" }, [
-    React.createElement("h1", {}, "Hello React"),
-    React.createElement("h2", {}, "Love React"),
-  ]),
-]);
+const heading = React.createElement("h1", { id: "heading" }, "Hello React");
 
-console.log(parent);
+//JSX is a javaScript syntax, which is similar to HTML it is HTML like Syntax
+const jsxHeading = <h1 id="heading">Hello React Using JSX</h1>;
+// JSX is  a valid javaScript but not a pure JavaScript Code
+// JSX is transmitted to JS Script by Bundelers to make it Run.
 
-const root  = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+console.log(jsxHeading);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(jsxHeading);
+
+//HTML code will replace by heading
+// Js Engine unsernstand ECMAscript
