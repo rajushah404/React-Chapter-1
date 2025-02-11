@@ -2959,7 +2959,7 @@ const heading = /*#__PURE__*/ (0, _reactDefault.default).createElement("h1", {
 }, "Hello React");
 //JSX is a javaScript syntax, which is similar to HTML it is HTML like Syntax
 const jsxHeading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-    id: "heading",
+    className: "head",
     children: "Hello React Using JSX"
 }, void 0, false, {
     fileName: "App.js",
@@ -2968,10 +2968,57 @@ const jsxHeading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
 }, undefined);
 // JSX is  a valid javaScript but not a pure JavaScript Code
 // JSX is transmitted to JS Script by Bundelers to make it Run.
-console.log(jsxHeading);
+// Babel jobs is to Transpile the JSX to JS Script Code
+// JSX => React.createElement => JS Object => HTML Element
+// React Components
+//Classed Based Components - OLD Way
+//Functional Componants - New Way
+// we can render functional components just by putting the function on <Functional Component/>
+const Title = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: "Title Component"
+    }, void 0, false, {
+        fileName: "App.js",
+        lineNumber: 23,
+        columnNumber: 10
+    }, undefined);
+};
+_c = Title;
+//It is also a componant composition  (passing one Component to another )
+const HeadingComponent = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 31,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                className: "heading",
+                children: "Hello React Functional Componants"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 32,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "App.js",
+        lineNumber: 30,
+        columnNumber: 5
+    }, undefined);
+};
+_c1 = HeadingComponent;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-root.render(jsxHeading); //HTML code will replace by heading
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeadingComponent, {}, void 0, false, {
+    fileName: "App.js",
+    lineNumber: 39,
+    columnNumber: 13
+}, undefined)); //HTML code will replace by heading
  // Js Engine unsernstand ECMAscript
+var _c, _c1;
+$RefreshReg$(_c, "Title");
+$RefreshReg$(_c1, "HeadingComponent");
 
   $parcel$ReactRefreshHelpers$c1db.postlude(module);
 } finally {
