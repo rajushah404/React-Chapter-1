@@ -1,66 +1,81 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-// function Footer() {
-//   return (
-//     <footer style={{ color: "green", fontSize: 30 }}>This is Footer </footer>
-//   );
-// }
-
-// const Component = ({ children }) => <h3>{children}</h3>;
-// const HeadingComponent = () => {
-//   return (
-//     <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-//       <Component>This is name </Component>
-//       {Component({ children: "inside" })}
-//       <h1 className="heading">Hello React Functional Componants</h1>
-//       <Footer />
-//     </div>
-//   );
-// };
-
-const nestedElement = React.createElement(
-  "div",
-  {},
-  React.createElement("h2", {}, "heading 1"),
-  React.createElement("h1", {}, "Heading 2"),
-  React.createElement("h3", {}, "heading 3")
-);
-
+/*
+ *Header:- -Logo -NavItem -Cart
+ *Body:-  -Search_Bar -Food_Cards_Container :- RestroCard
+ *Footer :- -CopyRight -Links - address -contact
+ */
 
 const Header = () => {
   return (
-    <header style={styles.header}>
-      <img src="logo.png" alt="Logo" style={styles.logo} />
-      <input type="text" placeholder="Search..." style={styles.search} />
-      <img src="user-icon.png" alt="User" style={styles.userIcon} />
-    </header>
+    <div className="header">
+      <div className="logo-container">
+        <img
+          className="logo"
+          src="https://cdn-icons-png.flaticon.com/512/706/706164.png"
+          alt="logo"
+        />
+      </div>
+      <div className="nav-items">
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Cart</li>
+        </ul>
+      </div>
+    </div>
   );
 };
 
-const styles = {
-  header: {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: "10px 20px",
-    backgroundColor: "#282c34",
-  },
-  logo: { width: "50px" },
-  search: { padding: "5px", width: "200px" },
-  userIcon: { width: "40px", borderRadius: "50%" },
+const RestroCard = (props) => {
+  return (
+    <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
+      <img className="res-logo" src={props.logo} alt={props.alt + "logo"} />
+      <h3>{props.title}</h3>
+      <h4>{props.cusine}</h4>
+      <h4>{props.rating}</h4>
+      <h4>{props.delivaryTime}</h4>
+    </div>
+  );
 };
 
+const Body = () => {
+  return (
+    <div className="body">
+      <div className="search">Search</div>
+      <div className="res-container">
+        <RestroCard
+          title="Thakali"
+          cusine="Nepali Khana"
+          rating="9*"
+          delivaryTime="30 min"
+          logo="https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_1280.jpg"
+          alt="thakali"
+        />
+                <RestroCard
+          title="Indian"
+          cusine="Indian Khana"
+          rating="9*"
+          delivaryTime="30 min"
+          logo="https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_1280.jpg"
+          alt="indian"
+        />
+      </div>
+    </div>
+  );
+};
+
+const AppLayout = () => {
+  return (
+    <div className="app">
+      <Header />
+      <Body />
+    </div>
+  );
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<Header/>);
-
-//HTML code will replace by heading
-// Js Engine unsernstand ECMAscript
-
-//Cross Side Scripting :-
-//JSX takes care of Injection attacks;
-//when ever the code is in {} the JSX will sanitize the data ;
-
-// The Component should start with capital letter
+root.render(<AppLayout />);
