@@ -1,0 +1,83 @@
+What does CDN means??
+
+
+
+// React Cores :-
+const parent = React.createElement(
+    "div",
+    { id: "parent" },
+    [
+        React.createElement("div", { id: "child" },
+            [React.createElement("h1", {}, "H1 Tag is here"),
+            React.createElement("h2", {}, "H2 Tag is here")]
+        ), React.createElement("div", { id: "child2" },
+            [React.createElement("h1", {}, "H1 Tag is here"),
+            React.createElement("h2", {}, "H2 Tag is here")]
+        )
+    ]
+
+);
+
+console.log(parent);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(parent);
+
+
+// React element (object) => HTML (Browser Understands)
+// JSX => 
+
+
+<<<<<<< HEAD:ReactNotes/Notes/ReactNotes.txt
+// In HTML
+
+
+// package.json is configuration of node packages manager.
+
+bundler basically packages you app to shift to production.
+
+Packages 2 
+DEV and Normal 
+Dev :- it is required for development phase 
+Normal :- it can be used in production 
+
+=======
+~ if we use this tilda sign over here then this will automaticall download 
+the mejor verson aviliale in future
+
+^ if we use (carret sign) this sign then it will install the minour version 
+if any aviliable.
+
+package-lock.json :-  keep the track of exjact package 
+version of that is installed with out ~ or ^
+
+node-Modules :-  it contains all the code fetch from npm
+it is database of npm it contains all the dependencies 
+it also install all needed  the dependencies required to run that package.
+this is known as transectivite dependency.
+
+
+
+if you have package-lock.json and package.josn we can re create the 
+node moduoles by (npm install).
+So it is not required to push the node_modules so ignore it.
+
+.gitignore:- it contains all the code which neede not be pushed in git 
+<<<<<<< HEAD:ReactNotes/ReactNotes.txt
+
+
+just like we have npm we have npx 
+npx  execute the package 
+
+
+- CDM links is not is practice or good way to have in my code
+- use npm to install React as dependency
+=======
+>>>>>>> 91b8e27974254504f7deffab6b8a69913b89ff39:ReactNotes/ReactNotes.txt
+>>>>>>> 1f04ae6371b2a1e41e08765d74b9ff246ca1b735:ReactNotes/Notes/ReactNotes.txt
+
+
+anand 126688
+tulsi 300k
+
+

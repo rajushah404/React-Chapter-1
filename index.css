@@ -37,6 +37,20 @@ body {
   transition: color 0.3s ease;
 }
 
+.nav-items li {
+  margin: 0 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.nav-items li:hover {
+  text-decoration: underline;
+  color: #007bff;
+}
+
 .nav-items ul li:hover {
   color: #ccc;
 }
@@ -102,7 +116,7 @@ body {
   transform: translateY(-5px) scale(1.05); /* Scale up slightly */
   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2); /* Stronger shadow */
   filter: grayscale(0%);
-  color: blue; /* Set the text color for the card */
+  color: black; /* Set the text color for the card */
   z-index: 2; /* Bring the card to the front */
 }
 .res-card:hover * {

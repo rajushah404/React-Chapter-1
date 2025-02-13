@@ -1,0 +1,16 @@
+Config Dreven UI :-
+Controlling UI using a Config 
+When UI changes according to the data comming from API
+
+
+
+-While Looping the data using 
+Map function always provide the KEY value to it
+
+-Keys :-
+Components at same level it should have unique id for
+React to optimizes its render cycle 
+
+
+Never use INDEX as KEYS it is not recomanded by React Documentation.
+Not Using Keys is <<<< Using Index as Key. <<<<<< Unique key from API

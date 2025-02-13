@@ -3324,10 +3324,10 @@ const Body = ()=>{
                 className: "res-container",
                 children: resList.map((res)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestroCard, {
                         resData: res
-                    }, void 0, false, {
+                    }, res.position, false, {
                         fileName: "App.js",
-                        lineNumber: 285,
-                        columnNumber: 29
+                        lineNumber: 286,
+                        columnNumber: 11
                     }, undefined))
             }, void 0, false, {
                 fileName: "App.js",
@@ -3348,18 +3348,18 @@ const AppLayout = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 294,
+                lineNumber: 296,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 295,
+                lineNumber: 297,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 293,
+        lineNumber: 295,
         columnNumber: 5
     }, undefined);
 };

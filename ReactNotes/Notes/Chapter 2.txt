@@ -1,0 +1,51 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { jsx } from "react/jsx-runtime";
+
+// React.createElement creats an object when we render this element
+// into DOM it becomes the HTML element
+
+const heading = React.createElement("h1", { id: "heading" }, "Hello React");
+
+//JSX is a javaScript syntax, which is similar to HTML it is HTML like Syntax
+const jsxHeading = <h1 id="heading">Hello React Using JSX</h1>;
+// JSX is  a valid javaScript but not a pure JavaScript Code
+// JSX is transmitted to JS Script by Bundelers to make it Run.
+// Babel jobs is to Transpile the JSX to JS Script Code
+// JSX => React.createElement => JS Object => HTML Element
+// camelCase is written in JSX to pass Attribute
+// to write the multiline JSX we should write it in (inside it);
+
+
+
+console.log(jsxHeading);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(jsxHeading);
+
+//HTML code will replace by heading
+// Js Engine unsernstand ECMAScript
+
+// React Components
+//Classed Based Components - OLD Way
+//Functional Componants - New Way
+
+// we can render functional components just by putting the function on <Functional Component/>
+const Title = () => {
+  return <h1>Title Component</h1>;
+};
+const HeadingComponent = () => {
+  return (
+    <div>
+      <Title />
+      <h1 className="heading">Hello React Functional Componants</h1>
+    </div>
+  );
+};
+
+//Cross Side Scripting :-
+//JSX takes care of Injection attacks;
+//when ever the code is in {} the JSX will sanitize the data ;
+
+// The Component should start with capital letter

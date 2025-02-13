@@ -31,7 +31,7 @@ const Header = () => {
 
 const RestroCard = (props) => {
   const { resData } = props;
-  const {image,name,aggregateRating,address} = resData?.item;
+  const { image, name, aggregateRating, address } = resData?.item;
   return (
     <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
       <img className="res-logo" src={image} alt="logo" />
@@ -282,7 +282,9 @@ const Body = () => {
     <div className="body">
       <div className="search">Search</div>
       <div className="res-container">
-        {resList.map(res => <RestroCard resData = {res}/>)}
+        {resList.map((res) => (
+          <RestroCard key={res.position} resData={res} />
+        ))}
       </div>
     </div>
   );
@@ -296,8 +298,6 @@ const AppLayout = () => {
     </div>
   );
 };
-
-
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
