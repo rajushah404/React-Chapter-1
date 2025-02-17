@@ -23,3 +23,11 @@
 # How to make it work
 - npm install  (to creatre all the modules and depencencies)
 - 
+
+
+#Food Ordering App
+/*
+ *Header:- -Logo -NavItem -Cart
+ *Body:-  -Search_Bar -Food_Cards_Container :- RestroCard
+ *Footer :- -CopyRight -Links - address -contact
+ */

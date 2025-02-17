@@ -1,0 +1,11 @@
+Type of Export/Impoer
+
+default Export => export default fileName
+Impoer Default => Import FileName from path...
+
+Named Export => Export FileName
+Import named => import {component} from FileName
+
+Question :- 
+
+can i use a default export along with named export
