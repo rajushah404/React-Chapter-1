@@ -2,9 +2,9 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Courier New', Courier, monospace;
-  background-color: #110e22;
-  color: #fff;
+  font-family: 'Arial', sans-serif; /* Changed to a more modern font */
+  background-color: #f8f9fa; /* Light gray background for a clean look */
+  color: #333; /* Dark gray for text for better readability */
   line-height: 1.6;
 }
 
@@ -14,13 +14,14 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #bac4c12d;
-  border-bottom: 2px solid #fff;
+  background-color: #ffffff; /* White background for the header */
+  border-bottom: 2px solid #e0e0e0; /* Subtle border */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
 .logo-container .logo {
   height: 50px;
-  filter: grayscale(100%);
+  filter: brightness(0.9); /* Slightly dimmed logo for a modern look */
 }
 
 .nav-items ul {
@@ -41,18 +42,14 @@ body {
   margin: 0 15px;
   font-size: 16px;
   cursor: pointer;
-  transition: color 0.3s ease;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
+  color: #555; /* Medium gray for nav items */
 }
 
 .nav-items li:hover {
+  color: #007bff; /* Bright blue on hover */
   text-decoration: underline;
-  color: #007bff;
-}
-
-.nav-items ul li:hover {
-  color: #ccc;
 }
 
 /* Body Styles */
@@ -60,54 +57,31 @@ body {
   padding: 2rem;
 }
 
-/* .search {
+.filter {
   margin-bottom: 2rem;
   text-align: center;
 }
 
-.search input {
-  padding: 0.75rem 1rem;
-  width: 300px;
-  border: 2px solid transparent;
-  border-radius: 8px;
-  background-color: #1a1a1a;
-  color: #fff;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-}
-
-.search input:focus {
-  outline: none;
-  border: 2px solid #00f7ff;
-  box-shadow: 0 0 15px rgba(0, 247, 255, 0.5);
-}
-
-.search input::placeholder {
-  color: #aaa;
-}
-
-.search button {
+.filter-btn {
   padding: 0.75rem 1.5rem;
   margin-left: 1rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Arial', sans-serif;
   font-size: 1rem;
   border: none;
   border-radius: 8px;
-  background: linear-gradient(135deg, #00f7ff, #1e90ff);
+  background: linear-gradient(135deg, #007bff, #00aaff); /* Blue gradient */
   color: #fff;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 0 10px rgba(30, 144, 255, 0.3);
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3); /* Soft shadow */
 }
 
-.search button:hover {
-  background: linear-gradient(135deg, #1e90ff, #00f7ff);
-  box-shadow: 0 0 20px rgba(30, 144, 255, 0.6);
-} */
+.filter-btn:hover {
+  background: linear-gradient(135deg, #00aaff, #007bff); /* Reverse gradient on hover */
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.5); /* Stronger shadow on hover */
+}
 
-
+/* Restaurant Cards */
 .res-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -115,115 +89,75 @@ body {
 }
 
 .res-card {
-  border: 2px solid #fff;
+  border: 1px solid #e0e0e0; /* Subtle border */
+  border-radius: 12px; /* Rounded corners */
   padding: 1rem;
-  background-color: #111;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease, color 0.3s ease;
+  background-color: #ffffff; /* White background */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  animation: scatter 1.5s ease-in-out forwards;
-  transform-origin: center; /* Ensure scaling happens from the center */
-}
-
-@keyframes zigzag {
-  0% {
-    transform: translateX(-100%) rotate(-45deg);
-    opacity: 0;
-  }
-  50% {
-    transform: translateX(50%) rotate(45deg);
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateX(0) rotate(0deg);
-    opacity: 1;
-  }
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
 .res-card:hover {
-  transform: translateY(-5px) scale(1.05); /* Scale up slightly */
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2); /* Stronger shadow */
-  filter: grayscale(0%);
-  color: black; /* Set the text color for the card */
-  z-index: 2; /* Bring the card to the front */
-}
-.res-card:hover * {
-  color: inherit; /* Ensure all child elements inherit the hover color */
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
 .res-card .res-logo {
   width: 100%;
   height: 150px;
   object-fit: cover;
-  border: 2px solid #fff;
-  filter: grayscale(100%);
-  transition: filter 0.3s ease;
+  border-radius: 8px; /* Rounded corners for the image */
+  transition: transform 0.3s ease;
 }
 
 .res-card:hover .res-logo {
-  filter: grayscale(0%);
+  transform: scale(1.05); /* Slight zoom on hover */
 }
 
 .res-card h3 {
   margin: 1rem 0 0.5rem;
   font-size: 1.2rem;
+  color: #007bff; /* Blue for restaurant names */
 }
 
 .res-card h4 {
   margin: 0.5rem 0;
   font-size: 1rem;
-  color: #ccc;
+  color: #555; /* Medium gray for secondary text */
+}
+
+.res-card p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  color: #777; /* Light gray for description */
+}
+
+.res-card .rating {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #ff9800; /* Orange for ratings */
+}
+
+.res-card .rating span {
+  margin-left: 0.5rem;
 }
 
 /* Footer Styles */
 .footer {
   text-align: center;
   padding: 1rem;
-  background-color: #111;
-  border-top: 2px solid #fff;
+  background-color: #ffffff; /* White background */
+  border-top: 2px solid #e0e0e0; /* Subtle border */
   margin-top: 2rem;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
 .footer p {
   margin: 0;
   font-size: 0.9rem;
-  color: #ccc;
-}
-
-/* Old-School Vibe Enhancements */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: repeating-linear-gradient(
-    0deg,
-    transparent,
-    transparent 2px,
-    rgba(255, 255, 255, 0.05) 2px,
-    rgba(255, 255, 255, 0.05) 4px
-  );
-  pointer-events: none;
-  z-index: -1;
-}
-
-.res-card::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: repeating-linear-gradient(
-    45deg,
-    transparent,
-    transparent 2px,
-    rgba(255, 255, 255, 0.05) 2px,
-    rgba(255, 255, 255, 0.05) 4px
-  );
-  pointer-events: none;
-  z-index: 1;
+  color: #555; /* Medium gray for footer text */
 }

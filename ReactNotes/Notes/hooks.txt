@@ -9,3 +9,30 @@ Import named => import {component} from FileName
 Question :- 
 
 can i use a default export along with named export
+
+
+// React is fast because it can do faster DOM manupulation.
+// Virtual DOM
+
+
+// HOOKS
+- loacl state variable.
+- it is a normal JS utilities functions which is given to us by react.
+- useState() - Super powerfull state variable in react.
+- useEffect()
+- when ever a state variable update react rerender its components.
+- Virtual DOM
+- dif along :- Finds out the different between updated 
+    VDOM and Previous VDOM and actually update the DOM
+- Reconciliation Algo
+- React Fiber  (React 16)
+- Virtual DOM is representation of Actual DOM
+- Virtual DOM is normal JS Nested Object.
+
+- In how many ways we can write this :-   const [listOfRestros, setListOfRestros] = useState(resList);
+
+
+
+  //  // Normal JS variable
+  let list = [];
+  list = ["abc"];

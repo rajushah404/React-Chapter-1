@@ -1,22 +1,33 @@
 import RestroCard from "./RestroCard";
 import resList from "../utils/mockData";
+import { useState } from "react";
 
 const Body = () => {
-    return (
-      <div className="body">
-        {/* <div>{<Search />}</div> */}
-        <div className="filter">
-          <button className="filter-btn">
-            Top Rated Restaurant
-          </button>
-        </div>
-        <div className="res-container">
-          {resList.map((res) => (
-            <RestroCard key={res.position} resData={res} />
-          ))}
-        </div>
-      </div>
-    );
-  };
+  // Local State Variable.
+  const [listOfRestros, setListOfRestros] = useState(resList);
 
-  export default Body;
+  return (
+    <div className="body">
+      <div className="filter">
+        <button
+          className="filter-btn"
+          onClick={() => {
+            //Filter Logic
+            filteredList = listOfRestros.filter(
+              (res) => res.item.aggregateRating.ratingValue > 4
+            );
+            setListOfRestros(filteredList);
+          }}
+        >
+          Top Rated Restaurant
+        </button>
+      </div>
+      <div className="res-container">
+        {listOfRestros.map((res) => (
+          <RestroCard key={res.position} resData={res} />
+        ))}
+      </div>
+    </div>
+  );
+};
+export default Body;
