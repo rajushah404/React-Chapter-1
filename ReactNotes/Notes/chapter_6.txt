@@ -1,0 +1,6 @@
+Monolith Architecture :-
+Microservice Architecture :-
+seperation of concern, single responsibility principle.
+
+When to make an API Call :-
+as soon as our landing page load we can make API call wait for data to come then we render the UI
