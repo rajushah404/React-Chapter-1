@@ -21,7 +21,6 @@ const Body = () => {
       }
       const json = await response.json();
 
-      console.log("API Response:", json);
       setListOfRestros(json || []);
     } catch (err) {
       setError(err.message);

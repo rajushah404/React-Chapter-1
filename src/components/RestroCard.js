@@ -4,15 +4,7 @@ const RestroCard = ({ productData }) => {
   const { image, title, price, category, rating } = productData;
 
   return (
-    <div
-      className="res-card"
-      style={{
-        backgroundColor: "#f0f0f0",
-        padding: "10px",
-        borderRadius: "8px",
-        textAlign: "center",
-      }}
-    >
+    <div className="res-card">
       <img
         className="res-logo"
         alt={title}
