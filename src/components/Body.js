@@ -1,59 +1,67 @@
 import RestroCard from "./RestroCard";
-import resList from "../utils/mockData";
 import { useState, useEffect } from "react";
+import { CDN_URL } from "../utils/constants";
 
 const Body = () => {
-  // Local State Variable.
-  const [listOfRestros, setListOfRestros] = useState(resList);
-  const [searchQuery, setSearchQuery] = useState("");
+  // State variables
+  const [listOfRestros, setListOfRestros] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  // const filterSearchRestro = () => {
-  //   const searchList = resList.filter((res) =>
-  //     res.item.name.toLowerCase().includes(searchQuery.toLowerCase())
-  //   );
-  //   setListOfRestros(searchList);
-  // };
-
+  // Fetch data from the API
   useEffect(() => {
-    const searchList = resList.filter((res) =>
-      res.item.name.toLowerCase().includes(searchQuery.toLowerCase())
-    );
-    setListOfRestros(searchList);
-  }, [searchQuery]);
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    try {
+      const response = await fetch("https://fakestoreapi.com/products");
+      if (!response.ok) {
+        throw new Error("Failed to fetch data");
+      }
+      const json = await response.json();
+
+      console.log("API Response:", json);
+      setListOfRestros(json || []);
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
+
+  // Filter top-rated restaurants
+  const filterTopRatedRestaurants = () => {
+    const filteredList = listOfRestros.filter((res) => res.rating.rate > 4);
+    setListOfRestros(filteredList);
+  };
+  // Show error state
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
 
   return (
     <div className="body">
       <div className="filter">
-        <input
-          id="search"
-          name="search"
-          type="text"
-          placeholder="Search for restaurants..."
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-        />
-        {/* <button className="filter-btn" onClick={filterSearchRestro}>
-          Search
-        </button> */}
-        <button
-          className="filter-btn"
-          onClick={() => {
-            //Filter Logic
-            filteredList = listOfRestros.filter(
-              (res) => res.item.aggregateRating.ratingValue > 4
-            );
-            setListOfRestros(filteredList);
-          }}
-        >
-          Top Rated Restaurant
+        <button className="filter-btn" onClick={filterTopRatedRestaurants}>
+          Top Rated Restaurants
         </button>
       </div>
       <div className="res-container">
-        {listOfRestros.map((res) => (
-          <RestroCard key={res.position} resData={res} />
-        ))}
+        {listOfRestros.length === 0 ? (
+          <p>No restaurants found.</p>
+        ) : (
+          listOfRestros.map((res) => (
+            <RestroCard key={res.id} productData={res} />
+          ))
+        )}
       </div>
     </div>
   );
 };
+
 export default Body;

@@ -3,4 +3,16 @@ Microservice Architecture :-
 seperation of concern, single responsibility principle.
 
 When to make an API Call :-
-as soon as our landing page load we can make API call wait for data to come then we render the UI
+- as soon as our landing page load we can make API call 
+wait for data to come then we render the UI
+
+- as soon as the page load we will render UI after the render we will make api 
+call and then rerender with the data from API
+
+
+-  second approch is better.
+- This gives better UX.
+- 
+
+CORS PLOICY:-
+our browers is blocking us to call api from one origin to different origin. 
