@@ -44,3 +44,7 @@ can i use a default export along with named export
   Why do we create state variable:
   -  to render the UI when the callback fnction is called .
   - to make our UI dynamic 
+
+
+-- when ever state variable update react triger 
+   the a reconciliation cycle (re-render the component).
