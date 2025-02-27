@@ -40,3 +40,7 @@ can i use a default export along with named export
   Optional Chaining :-  checking if the data is null or not.
   SIMMER UI 
   
+
+  Why do we create state variable:
+  -  to render the UI when the callback fnction is called .
+  - to make our UI dynamic 

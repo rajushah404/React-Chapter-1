@@ -25,11 +25,7 @@ const Body = () => {
     setListOfRestros(filteredList);
   };
 
-  if (listOfRestros.length === 0) {
-    return <Shimmer />;
-  }
-
-  return (
+  return listOfRestros.length === 0 ? <Shimmer /> : (
     <div className="body">
       <div className="filter">
         <button className="filter-btn" onClick={filterTopRatedRestaurants}>
