@@ -36,3 +36,7 @@ can i use a default export along with named export
   //  // Normal JS variable
   let list = [];
   list = ["abc"];
+
+  Optional Chaining :-  checking if the data is null or not.
+  SIMMER UI 
+  

@@ -2,10 +2,10 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif; /* Changed to a more modern font */
-  background-color: #f8f9fa; /* Light gray background for a clean look */
-  color: #333; /* Dark gray for text for better readability */
-  line-height: 1.6;
+  font-family: 'Poppins', sans-serif; /* Modern, clean font */
+  background-color: #f4f6f9; /* Slightly softer background */
+  color: #333;
+  line-height: 1.8;
 }
 
 /* Header Styles */
@@ -14,14 +14,14 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #ffffff; /* White background for the header */
-  border-bottom: 2px solid #e0e0e0; /* Subtle border */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  background-color: #fff;
+  border-bottom: 2px solid #e0e0e0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo-container .logo {
   height: 50px;
-  filter: brightness(0.9); /* Slightly dimmed logo for a modern look */
+  filter: brightness(0.9);
 }
 
 .nav-items ul {
@@ -36,32 +36,12 @@ body {
   font-size: 1.1rem;
   cursor: pointer;
   transition: color 0.3s ease;
+  color: #555;
 }
 
-.nav-items li {
-  margin: 0 15px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
-  color: #555; /* Medium gray for nav items */
-}
-
-.nav-items li:hover {
-  color: #007bff; /* Bright blue on hover */
+.nav-items ul li:hover {
+  color: #007bff;
   text-decoration: underline;
-}
-
-/* Body Styles */
-.body {
-  padding: 2rem;
-}
-
-
-
-.filter {
-  margin-bottom: 2rem;
-  text-align: center;
 }
 
 /* Search Bar Styles */
@@ -73,19 +53,19 @@ body {
 }
 
 #search {
-  width: 300px; /* Wider input field */
+  width: 350px;
   padding: 0.75rem;
   font-size: 1rem;
-  border: 2px solid #007bff; /* Blue border */
-  border-radius: 8px;
+  border: 2px solid #007bff;
+  border-radius: 10px;
   outline: none;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.1); /* Subtle shadow */
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.1);
 }
 
 #search:focus {
-  border-color: #0056b3; /* Darker blue when focused */
-  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3); /* Stronger shadow */
+  border-color: #0056b3;
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
 }
 
 .filter-btn {
@@ -93,8 +73,8 @@ body {
   margin-left: 1rem;
   font-size: 1rem;
   border: none;
-  border-radius: 8px;
-  background: linear-gradient(135deg, #007bff, #00aaff); /* Blue gradient */
+  border-radius: 10px;
+  background: linear-gradient(135deg, #007bff, #00aaff);
   color: #fff;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -106,67 +86,66 @@ body {
   box-shadow: 0 6px 15px rgba(0, 123, 255, 0.5);
 }
 
-
 /* Restaurant Cards */
 .res-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
 }
 
 .res-card {
-  border: 1px solid #e0e0e0; /* Subtle border */
-  border-radius: 12px; /* Rounded corners */
+  border-radius: 12px;
   padding: 1rem;
-  background-color: #ffffff; /* White background */
+  background: #fff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
   text-align: center;
   overflow: hidden;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .res-card:hover {
-  transform: translateY(-5px); /* Slight lift on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .res-card .res-logo {
   width: 100%;
-  height: 150px;
+  height: 180px;
   object-fit: cover;
-  border-radius: 8px; /* Rounded corners for the image */
+  border-radius: 8px;
   transition: transform 0.3s ease;
 }
 
 .res-card:hover .res-logo {
-  transform: scale(1.05); /* Slight zoom on hover */
+  transform: scale(1.05);
 }
 
 .res-card h3 {
   margin: 1rem 0 0.5rem;
-  font-size: 1.2rem;
-  color: #007bff; /* Blue for restaurant names */
+  font-size: 1.3rem;
+  color: #007bff;
 }
 
 .res-card h4 {
   margin: 0.5rem 0;
   font-size: 1rem;
-  color: #555; /* Medium gray for secondary text */
+  color: #555;
 }
 
 .res-card p {
   margin: 0.5rem 0;
   font-size: 0.9rem;
-  color: #777; /* Light gray for description */
+  color: #777;
 }
 
 .res-card .rating {
   display: flex;
   align-items: center;
+  justify-content: center;
   font-size: 0.9rem;
-  color: #ff9800; /* Orange for ratings */
+  color: #ff9800;
 }
 
 .res-card .rating span {
@@ -177,14 +156,57 @@ body {
 .footer {
   text-align: center;
   padding: 1rem;
-  background-color: #ffffff; /* White background */
-  border-top: 2px solid #e0e0e0; /* Subtle border */
+  background-color: #fff;
+  border-top: 2px solid #e0e0e0;
   margin-top: 2rem;
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .footer p {
   margin: 0;
   font-size: 0.9rem;
-  color: #555; /* Medium gray for footer text */
+  color: #555;
+}
+
+/* Shimmer Loading Effect */
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.shimmer-card {
+  height: 400px;
+  width: 250px;
+  background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f1 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes shimmer {
+  0% { background-position: -100% 0; }
+  100% { background-position: 100% 0; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav-items ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  #search {
+    width: 100%;
+    max-width: 300px;
+  }
+  .filter-btn {
+    width: 100%;
+    max-width: 200px;
+  }
 }
