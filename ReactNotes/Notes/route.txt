@@ -1,0 +1,27 @@
+UseEffect is called using two arguments 
+1. Callback Function 
+2. Dependency Array.
+
+useEffect will be called every time when the components render
+Dependency Arrey changes the behaviour of useEffect.
+
+if the Dependency array is empty = [] => useEffect is called on initial render and just 
+once.
+
+
+if you have something as Dependency then useEffect will be only called 
+when the Dependency chages 
+
+
+-- Never use useState outside the components.
+-- Call the Hooks on the Top of the components.
+-- Dont create the Hooks inside the conditions, loops, functions.
+
+
+
+Now Come to Routes in react 
+
+we can use npm libeary called react-router-dom 
+
+
+on the rooter level create routing configuration

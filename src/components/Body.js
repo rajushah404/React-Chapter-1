@@ -1,6 +1,5 @@
 import RestroCard from "./RestroCard";
 import { useState, useEffect } from "react";
-import { CDN_URL } from "../utils/constants";
 import Shimmer from "./Shimmer";
 
 const Body = () => {
