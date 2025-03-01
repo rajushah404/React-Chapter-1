@@ -25,3 +25,14 @@ we can use npm libeary called react-router-dom
 
 
 on the rooter level create routing configuration
+
+
+
+Reract-router-dom give us hook 
+-import { useRouteError } from "react-router-dom";
+
+dont use a ancor tage to route in react.
+
+navigate to new page without reloading the whole page.
+
+use Link Conmponent which is given by react-router-dom

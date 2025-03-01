@@ -1,13 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import { NavLink } from "react-router-dom"; // Use NavLink instead of Link
 import { LOGO_URL } from "../utils/constants";
 
 const Header = () => {
   const [login, setLogin] = useState("Login");
-  console.log("Header Rendered");
-  
-  useEffect(()=>{
-    console.log("UseEffect Called");
-  },[login]);
 
   return (
     <div className="header">
@@ -16,15 +12,29 @@ const Header = () => {
       </div>
       <div className="nav-items">
         <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
-          <li>Cart</li>
+          <li>
+            <NavLink to="/" className="nav-link">
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/about" className="nav-link">
+              About Us
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact" className="nav-link">
+              Contact Us
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/cart" className="nav-link">
+              Cart
+            </NavLink>
+          </li>
           <button
             className="login-btn"
-            onClick={() => {
-              login === "Login" ? setLogin("Logout") : setLogin("Login");
-            }}
+            onClick={() => setLogin(login === "Login" ? "Logout" : "Login")}
           >
             {login}
           </button>
