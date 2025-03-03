@@ -72,12 +72,5 @@ npx  execute the package
 
 - CDM links is not is practice or good way to have in my code
 - use npm to install React as dependency
-=======
->>>>>>> 91b8e27974254504f7deffab6b8a69913b89ff39:ReactNotes/ReactNotes.txt
->>>>>>> 1f04ae6371b2a1e41e08765d74b9ff246ca1b735:ReactNotes/Notes/ReactNotes.txt
-
-
-anand 126688
-tulsi 300k
 
 

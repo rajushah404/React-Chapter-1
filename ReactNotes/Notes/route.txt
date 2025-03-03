@@ -36,3 +36,10 @@ dont use a ancor tage to route in react.
 navigate to new page without reloading the whole page.
 
 use Link Conmponent which is given by react-router-dom
+
+
+# Routing in web apps
+1. clint site routing
+2. server site routing 
+
+

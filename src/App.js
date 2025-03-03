@@ -7,6 +7,7 @@ import About from "./components/About";
 import ContactUs from "./components/ContactUs";
 import Cart from "./components/Cart";
 import Error from "./components/Error";
+import ProductMenu from "./components/ProductMenu";
 
 const AppLayout = () => {
   return (
@@ -34,14 +35,15 @@ const appRouter = createBrowserRouter([
         path: "/contact",
         element: <ContactUs />,
       },
+      {
+        path: "/products/:proId",
+        element: <ProductMenu />,
+      },
     ],
     errorElement: <Error />,
   },
-  {
-    path: "/cart",
-    element: <Cart />,
-  },
 ]);
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<RouterProvider router={appRouter} />);
