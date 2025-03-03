@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import { NO_IMEGE } from "../utils/constants";
-import "./ProductMenu.css";
+import "../css/ProductMenu.css";
 import { useParams } from "react-router-dom";
 
 const ProductMenu = () => {

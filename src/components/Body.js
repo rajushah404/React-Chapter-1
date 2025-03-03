@@ -1,7 +1,7 @@
 import RestroCard from "./RestroCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom"; 
 
 const Body = () => {
   // State variables
@@ -60,9 +60,9 @@ const Body = () => {
       </div>
       <div className="res-container">
         {filteredList.map((res) => (
-          <Link key={res.id} to={"/products/"+res.id}>
+          <NavLink  key={res.id} to={"/products/" + res.id}>
             <RestroCard key={res.id} productData={res} />
-          </Link>
+          </NavLink>
         ))}
       </div>
     </div>
