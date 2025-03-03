@@ -1,35 +1,50 @@
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
-import Error from "./Error";
+import { NO_IMEGE } from "../utils/constants";
+import "./ProductMenu.css";
+import { useParams } from "react-router-dom";
 
 const ProductMenu = () => {
   const [productInfo, setProductInfo] = useState(null);
+
+  const {proId} = useParams();
+
+
   useEffect(() => {
     fetchData();
   }, []);
+
   const fetchData = async () => {
-    const data = await fetch("https://fakestoreapi.com/products/1");
+    const data = await fetch("https://fakestoreapi.com/products/"+proId);
     const json = await data.json();
     setProductInfo(json);
-    console.log(json);
   };
-  return productInfo === null ? (
-    <Shimmer />
-  ) : (
-    <div>
-      <h1>{productInfo.title}</h1>
-      <h2>{productInfo.category}</h2>
-      <h3>{productInfo.description}</h3>
-      <img
-        className="res-logo"
-        alt={productInfo.title}
-        src={productInfo.image}
-        style={{ width: "150px", height: "150px", objectFit: "contain" }}
-        onError={(e) => {
-          e.target.src = { NO_IMEGE };
-        }}
-      />
 
+  if (productInfo === null) {
+    return <Shimmer />;
+  }
+
+  return (
+    <div className="product-details-container">
+      <div className="product-image-container">
+        <div className="image-zoom-wrapper">
+          <img
+            className="product-image"
+            alt={productInfo.title}
+            src={productInfo.image}
+            onError={(e) => {
+              e.target.src = NO_IMEGE;
+            }}
+          />
+        </div>
+      </div>
+      <div className="product-info-container">
+        <h1 className="product-title">{productInfo.title.toUpperCase()}</h1>
+        <h2 className="product-category">{productInfo.category.toUpperCase()}</h2>
+        <p className="product-description">{productInfo.description}</p>
+        <p className="product-price">${productInfo.price}</p>
+        <button className="add-to-cart-button">Add to Cart</button>
+      </div>
     </div>
   );
 };

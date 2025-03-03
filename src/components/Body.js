@@ -1,6 +1,7 @@
 import RestroCard from "./RestroCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 const Body = () => {
   // State variables
@@ -27,9 +28,10 @@ const Body = () => {
   };
 
   const searchProductFilter = () => {
-    const searchproduct = listOfProduct.filter((pro) =>
-      pro.title.toLowerCase().includes(searchText.toLowerCase()) || 
-    pro.category.toLowerCase().includes(searchText.toLowerCase())
+    const searchproduct = listOfProduct.filter(
+      (pro) =>
+        pro.title.toLowerCase().includes(searchText.toLowerCase()) ||
+        pro.category.toLowerCase().includes(searchText.toLowerCase())
     );
     setFilteredList(searchproduct);
   };
@@ -58,7 +60,9 @@ const Body = () => {
       </div>
       <div className="res-container">
         {filteredList.map((res) => (
-          <RestroCard key={res.id} productData={res} />
+          <Link key={res.id} to={"/products/"+res.id}>
+            <RestroCard key={res.id} productData={res} />
+          </Link>
         ))}
       </div>
     </div>
