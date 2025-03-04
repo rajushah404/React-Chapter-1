@@ -39,11 +39,15 @@ const appRouter = createBrowserRouter([
         path: "/products/:proId",
         element: <ProductMenu />,
       },
+      ,
+      {
+        path: "/cart",
+        element: <Cart />,
+      },
     ],
     errorElement: <Error />,
   },
 ]);
-
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<RouterProvider router={appRouter} />);
