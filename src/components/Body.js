@@ -60,7 +60,7 @@ const Body = () => {
       </div>
       <div className="res-container">
         {filteredList.map((res) => (
-          <NavLink  key={res.id} to={"/products/" + res.id}>
+          <NavLink  style={{ textDecoration: "none" }}  key={res.id} to={"/products/" + res.id} >
             <RestroCard key={res.id} productData={res} />
           </NavLink>
         ))}

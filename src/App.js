@@ -8,12 +8,14 @@ import ContactUs from "./components/ContactUs";
 import Cart from "./components/Cart";
 import Error from "./components/Error";
 import ProductMenu from "./components/ProductMenu";
+import Footer from "./components/Footer";
 
 const AppLayout = () => {
   return (
     <div className="app">
       <Header />
       <Outlet />
+      <Footer/>
     </div>
   );
 };
