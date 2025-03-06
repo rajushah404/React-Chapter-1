@@ -1,28 +1,42 @@
 import "../css/User.css";
 import React from "react";
 class UserClass extends React.Component {
-    constructor(props) {
-        super(props);
-        console.log(props);
+  constructor(props) {
+    super(props);
 
-        this.state = {
-            count: 0,
-            count2: 1,
-        }
-    }
-    render() {
-        const { name, location, contact } = this.props;
-        const { count, count2 } = this.state;
-        return <div className="user-card">
-            <h2>{name}</h2>
-            <h3>{location}</h3>
-            <h4>Contact: {contact}</h4>
-            <h4>Count: {count}</h4>
-            <h4>Count: {count2}</h4>
-        </div>
+    this.state = {
+      count: 0,
+      count2: 5,
+    };
+    console.log("User Class Constructor");
+  }
 
-    }
+  componentDidMount(){
+    console.log("Child Mounted")
+  }
+  render() {
+    const { name, location, contact } = this.props;
+    const { count } = this.state;
+
+    console.log("User Body");
+    return (
+      <div className="user-card">
+        <h2>{name}</h2>
+        <h3>{location}</h3>
+        <h4>Contact: {contact}</h4>
+        <h4>Count: {count}</h4>
+        <button
+          onClick={() => {
+            this.setState({
+              count: this.state.count + 1,
+            });
+          }}
+        >
+          Count Increase
+        </button>
+      </div>
+    );
+  }
 }
 
 export default UserClass;
-

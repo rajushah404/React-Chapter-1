@@ -1,2 +1,6 @@
 Class Based Components
 
+// Never update state variable directly 
+
+//  while using setState in class component the setState will only update
+the passed variable with out touching other variables
