@@ -6,8 +6,8 @@ const About = () => {
     <div>
       <h1>This is About Us Page</h1>
       <div className="user-container">
-        <User name = {"Raju Shah (Function)"} location={"Kathmandu"} />
-        <UserClass name = {"Raju Shah (Class)"} />
+        <User name={"Raju Shah (Function)"} location={"Kathmandu"} />
+        <UserClass name={"Raju Shah (Class)"} location={"KTM"} contact={"rajushah2286@gmail.com"} />
       </div>
     </div>
   );
