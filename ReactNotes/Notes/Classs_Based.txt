@@ -4,3 +4,16 @@ Class Based Components
 
 //  while using setState in class component the setState will only update
 the passed variable with out touching other variables
+
+
+
+Mounting Has Two Phase 
+1. Render Phase:-
+a. Constructor will render first
+b. Render will be rendered second 
+
+then. 
+
+
+2. Commit Phase 
+a. componentDidmount will be rendered after all the render al last 

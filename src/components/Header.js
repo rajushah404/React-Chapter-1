@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom"; 
+import { NavLink } from "react-router-dom";
 import { LOGO_URL } from "../utils/constants";
 
 const Header = () => {
@@ -7,9 +7,11 @@ const Header = () => {
 
   return (
     <div className="header">
-      <div className="logo-container">
-        <img className="logo" src={LOGO_URL} alt="logo" />
-      </div>
+      <NavLink to="/" className="nav-link">
+        <div className="logo-container">
+          <img className="logo" src={LOGO_URL} alt="logo" />
+        </div>
+      </NavLink>
       <div className="nav-items">
         <ul>
           <li>

@@ -1,5 +1,7 @@
 import "../css/User.css";
 import React from "react";
+
+
 class UserClass extends React.Component {
   constructor(props) {
     super(props);
@@ -8,17 +10,17 @@ class UserClass extends React.Component {
       count: 0,
       count2: 5,
     };
-    console.log("User Class Constructor");
+    console.log(this.props.name + "User Class Constructor");
   }
 
-  componentDidMount(){
-    console.log("Child Mounted")
+  componentDidMount() {
+    console.log(this.props.name + "Child Mounted");
   }
   render() {
     const { name, location, contact } = this.props;
     const { count } = this.state;
 
-    console.log("User Body");
+    console.log(this.props.name + "User Body");
     return (
       <div className="user-card">
         <h2>{name}</h2>

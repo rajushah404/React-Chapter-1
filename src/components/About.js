@@ -8,7 +8,7 @@ class About extends Component {
     super(props);
     console.log("Parent Constructor");
   }
-  componentDidMount(){
+  componentDidMount() {
     console.log("Parent Mounted");
   }
   render() {
@@ -20,6 +20,11 @@ class About extends Component {
           <UserClass
             name={"Raju Shah (Class)"}
             location={"KTM"}
+            contact={"rajushah2286@gmail.com"}
+          />
+          <UserClass
+            name={" Shah (Class)"}
+            location={"Basantapur"}
             contact={"rajushah2286@gmail.com"}
           />
         </div>

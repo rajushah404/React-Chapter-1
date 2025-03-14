@@ -1,11 +1,11 @@
 import RestroCard from "./RestroCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
-import { NavLink } from "react-router-dom"; 
+import { NavLink } from "react-router-dom";
 
 const Body = () => {
   // State variables
-  const [listOfProduct, setlistOfProduct] = useState([]);
+  const [listOfProduct, setListOfProduct] = useState([]);
   const [searchText, setSearchText] = useState("");
   const [filteredList, setFilteredList] = useState([]);
 
@@ -17,28 +17,36 @@ const Body = () => {
   const fetchData = async () => {
     const data = await fetch("https://fakestoreapi.com/products");
     const json = await data.json();
-    setlistOfProduct(json);
+    setListOfProduct(json);
     setFilteredList(json);
   };
 
-  // Filter top-rated restaurants
+  // Filter top-rated products
   const filterTopRatedProduct = () => {
     const filteredList = listOfProduct.filter((res) => res.rating.rate > 4);
     setFilteredList(filteredList);
   };
 
-  const searchProductFilter = () => {
-    const searchproduct = listOfProduct.filter(
-      (pro) =>
-        pro.title.toLowerCase().includes(searchText.toLowerCase()) ||
-        pro.category.toLowerCase().includes(searchText.toLowerCase())
-    );
-    setFilteredList(searchproduct);
+  // Search and filter products
+  const searchProductFilter = (text) => {
+    setSearchText(text); // Update the searchText state
+    if (text.length >= 3) {
+      const searchProduct = listOfProduct.filter(
+        (pro) =>
+          pro.title.toLowerCase().includes(text.toLowerCase()) ||
+          pro.category.toLowerCase().includes(text.toLowerCase())
+      );
+      setFilteredList(searchProduct);
+    } else {
+      setFilteredList(listOfProduct);
+    }
   };
 
-  return listOfProduct.length === 0 ? (
-    <Shimmer />
-  ) : (
+  if (listOfProduct.length === 0) {
+    return <Shimmer />;
+  }
+
+  return (
     <div className="body">
       <div className="search-filter-container">
         <input
@@ -46,21 +54,19 @@ const Body = () => {
           placeholder="Search product ..."
           id="productname"
           value={searchText}
-          onChange={(e) => {
-            setSearchText(e.target.value);
-          }}
+          onChange={(e) => searchProductFilter(e.target.value)}
         />
-        <button className="search-btn" onClick={searchProductFilter}>
-          Search
-        </button>
-
         <button className="filter-btn" onClick={filterTopRatedProduct}>
-          Top Rated Restaurants
+          Top Rated Products
         </button>
       </div>
       <div className="res-container">
         {filteredList.map((res) => (
-          <NavLink  style={{ textDecoration: "none" }}  key={res.id} to={"/products/" + res.id} >
+          <NavLink
+            style={{ textDecoration: "none" }}
+            key={res.id}
+            to={"/products/" + res.id}
+          >
             <RestroCard key={res.id} productData={res} />
           </NavLink>
         ))}
