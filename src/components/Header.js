@@ -1,9 +1,12 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { LOGO_URL } from "../utils/constants";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Header = () => {
   const [login, setLogin] = useState("Login");
+
+  const onlineStatus = useOnlineStatus();
 
   return (
     <div className="header">
@@ -14,6 +17,7 @@ const Header = () => {
       </NavLink>
       <div className="nav-items">
         <ul>
+          <li>Online Stauts : {onlineStatus ? "Online" : "Offline"}</li>
           <li>
             <NavLink to="/" className="nav-link">
               Home

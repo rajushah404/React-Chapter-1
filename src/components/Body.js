@@ -2,24 +2,14 @@ import RestroCard from "./RestroCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { NavLink } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
+import useListOfProduct from "../utils/useListOfProduct";
 
 const Body = () => {
   // State variables
-  const [listOfProduct, setListOfProduct] = useState([]);
   const [searchText, setSearchText] = useState("");
-  const [filteredList, setFilteredList] = useState([]);
 
-  // Fetch data from the API
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  const fetchData = async () => {
-    const data = await fetch("https://fakestoreapi.com/products");
-    const json = await data.json();
-    setListOfProduct(json);
-    setFilteredList(json);
-  };
+  const { listOfProduct, filteredList, setFilteredList } = useListOfProduct();
 
   // Filter top-rated products
   const filterTopRatedProduct = () => {
@@ -29,7 +19,7 @@ const Body = () => {
 
   // Search and filter products
   const searchProductFilter = (text) => {
-    setSearchText(text); // Update the searchText state
+    setSearchText(text); 
     if (text.length >= 3) {
       const searchProduct = listOfProduct.filter(
         (pro) =>
@@ -41,6 +31,10 @@ const Body = () => {
       setFilteredList(listOfProduct);
     }
   };
+
+  const onlineStatus = useOnlineStatus();
+
+  if (onlineStatus === false) return <h1>Looks like ypu are offline</h1>;
 
   if (listOfProduct.length === 0) {
     return <Shimmer />;
