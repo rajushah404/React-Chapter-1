@@ -1,0 +1,10 @@
+
+    single responsibility priciple 
+-Modularity means to break down the code in different smalls modules
+
+
+Hooks are special JS function 
+Hooks is utility function
+
+
+while creating hooks always start its naming with use--hookname.JS

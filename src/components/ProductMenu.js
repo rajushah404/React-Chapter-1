@@ -1,24 +1,13 @@
-import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import { NO_IMEGE } from "../utils/constants";
 import "../css/ProductMenu.css";
 import { useParams } from "react-router-dom";
+import useProductMenu from "../utils/useProductMenu";
 
 const ProductMenu = () => {
-  const [productInfo, setProductInfo] = useState(null);
+  const { proId } = useParams();
 
-  const {proId} = useParams();
-
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  const fetchData = async () => {
-    const data = await fetch("https://fakestoreapi.com/products/"+proId);
-    const json = await data.json();
-    setProductInfo(json);
-  };
+  const productInfo = useProductMenu(proId);
 
   if (productInfo === null) {
     return <Shimmer />;
@@ -40,7 +29,9 @@ const ProductMenu = () => {
       </div>
       <div className="product-info-container">
         <h1 className="product-title">{productInfo.title.toUpperCase()}</h1>
-        <h2 className="product-category">{productInfo.category.toUpperCase()}</h2>
+        <h2 className="product-category">
+          {productInfo.category.toUpperCase()}
+        </h2>
         <p className="product-description">{productInfo.description}</p>
         <p className="product-price">${productInfo.price}</p>
         <button className="add-to-cart-button">Add to Cart</button>
